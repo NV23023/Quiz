@@ -1,0 +1,37 @@
+.option {
+    margin: 10px 0;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.option:hover {
+    background-color: #e8f4fc;
+}
+.option:hover label {
+    background-color: inherit;
+}
+.option input[type="radio"] {
+    margin: 0 10px;
+    cursor: pointer;
+}
+.option label {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.2s;
+}
+.option input[type="radio"]:focus + label {
+    outline: 2px solid #4CAF50;
+}
+.option input[type="radio"]:checked + label {
+    background-color: #e8f4fc;
+    font-weight: bold;
+}
+.option input[type="radio"]:disabled + label {
+    color: #999;
+    cursor: not-allowed;
+}

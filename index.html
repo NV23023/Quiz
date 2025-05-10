@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AWS AI Practitioner Quiz</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+    .question {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+    .question:hover {
+      transform: scale(1.01);
+    }
+    .question h3 {
+      margin-top: 0;
+      color: #3498db;
+    }
+    .option {
+      margin: 5px 0;
+      padding: 8px;
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .option:hover {
+      background-color: #e8f4fc;
+    }
+    .option input[type="radio"] {
+      margin-right: 10px;
+    }
+    .option label {
+      cursor: pointer;
+      display: block;
+      padding: 5px;
+    }
+    .feedback {
+      font-weight: bold;
+      margin-top: 10px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .correct {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .incorrect {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+    .result {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #e2e3e5;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 18px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    #submit-btn, #reset-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 12px 25px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    #submit-btn:disabled, #reset-btn:disabled {
+      background-color: #a5a5a5;
+      cursor: not-allowed;
+    }
+    #submit-btn:hover:not(:disabled), #reset-btn:hover:not(:disabled) {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>AWS Certified AI Practitioner Quiz</h1>
+  <div id="quiz-container"></div>
+  <button id="submit-btn">Submit Answers</button>
+  <button id="reset-btn">Reset Quiz</button>
+
+  <!-- JavaScript linked externally -->
+  <script src="script.js"></script>
+</body>
+</html>
