@@ -574,7 +574,7 @@ const questions = [
   {
     question: "T/F: Amazon Bedrock handles the creation of vector embeddings automatically.",
     options: ["True", "False"],
-    answer: "False",
+    answer: "True",
     type: "tf"
   },
   {
